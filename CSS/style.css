@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Ubuntu+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Grey+Qo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+body {
+  background: url("../IMG/bg.jpeg");
+}
+.starter {
+  clip-path: ellipse(51% 40% at 50% 9%);
+  background: rgba(11, 34, 52, 0.9);
+  height: 280px;
+  width: 100vw;
+  box-shadow: 2px 2px 2px white;
+}
+.starter > h1 {
+  color: white;
+  padding: 20px;
+  letter-spacing: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Grey Qo";
+}
+.starter > p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: "Birthstone Bounce";
+}
+
+#home-section {
+  width: 100vw;
+  height: 60vh;
+}
+.first-Container {
+  background: rgba(11, 34, 52, 0.9);
+}
+.first-Container-head {
+  text-align: center;
+  color: white;
+  font-family: "Kaushan Script", cursive;
+  font-size: 60px;
+}
+.first-Container-para {
+  text-align: center;
+  color: white;
+  display: block;
+  width: 350px;
+  font-size: 30px;
+  padding: 10px;
+  margin: auto;
+  font-family: "Cookie";
+}
+.btn-1 {
+  width: 100px;
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  font-family: "Amatic SC";
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-2 {
+  width: 100px;
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  font-family: "Amatic SC";
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-1 a{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+.btn-1:hover {
+  background: rgb(11, 34, 52);
+  color: white;
+}
+.btn-2:hover {
+  background: rgb(11, 34, 52);
+  color: white;
+}
+.follow {
+  text-align: center;
+}
+i {
+  filter: invert(100%);
+  margin: 5px;
+}
+i a {
+  color: white;
+}
+i:hover {
+  color: rgb(82, 31, 2);
+  cursor: pointer;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list li {
+  margin: 0px 15px;
+}
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Grey Qo";
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.nav-list li a:hover {
+  color: rgb(0, 132, 255);
+  cursor: pointer;
+}
