@@ -40,7 +40,7 @@ body {
 
 #home-section {
   width: 100vw;
-  height: 60vh;
+  /* height: 60vh; */
 }
 .first-Container {
   background: rgba(11, 34, 52, 0.9);
@@ -127,3 +127,48 @@ i:hover {
   color: rgb(0, 132, 255);
   cursor: pointer;
 }
+
+
+@media only screen and (max-width:960px){
+  .starter{
+  height: 300px;
+  }
+}
+@media only screen and (max-width:550px){
+  .starter{
+  height: 500px;
+  }
+}
+@media only screen and (max-width:400px){
+  .starter{
+  height: 400px;
+  }
+  .starter > h1{
+    font-size: 35px;
+  }
+  .starter > p{
+  font-size: 15px;
+  }
+.nav-list{
+  flex-direction: column;
+}
+.first-Container-head{
+  font-size: 30px;
+}
+.first-Container-para{
+  font-size: 20px;
+  width: 140px;
+}
+}
+@media only screen and (max-width:300px){
+  .starter{
+    height: 450px;
+  }
+  .starter > h1{
+    font-size: 25px;
+  }
+  .starter > p{
+    font-size: 15px;
+  }
+}
+
