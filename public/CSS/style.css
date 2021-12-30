@@ -1,174 +1,269 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Ubuntu+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Grey+Qo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Fira+Sans:wght@500&family=Yanone+Kaffeesatz:wght@500&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
-body {
-  background: url("../IMG/bg.jpeg");
-}
-.starter {
-  clip-path: ellipse(51% 40% at 50% 9%);
-  background: rgba(11, 34, 52, 0.9);
-  height: 280px;
-  width: 100vw;
-  box-shadow: 2px 2px 2px white;
-}
-.starter > h1 {
-  color: white;
-  padding: 20px;
-  letter-spacing: 20px;
-  font-size: 50px;
-  text-align: center;
-  font-family: "Grey Qo";
-}
-.starter > p {
-  color: white;
-  text-align: center;
-  font-size: 25px;
-  letter-spacing: 5px;
-  font-family: "Birthstone Bounce";
-}
-
-#home-section {
-  width: 100vw;
-  /* height: 60vh; */
-}
-.first-Container {
-  background: rgba(11, 34, 52, 0.9);
-}
-.first-Container-head {
-  text-align: center;
-  color: white;
-  font-family: "Kaushan Script", cursive;
-  font-size: 60px;
-}
-.first-Container-para {
-  text-align: center;
-  color: white;
+.prmt-nav{
+  /* border: 2px solid red; */
+  position: fixed;
   display: block;
-  width: 350px;
-  font-size: 30px;
-  padding: 10px;
-  margin: auto;
-  font-family: "Cookie";
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Yanone Kaffeesat";
+  font-size: 15px;
 }
-.btn-1 {
-  width: 100px;
-  display: block;
-  margin: 10px auto;
-  padding: 5px;
-  font-family: "Amatic SC";
-  font-size: 20px;
-  font-weight: bold;
+.prmt-nav > p{
+  color: white;
+  margin: 0px 20px;
+}
+.prmt-nav > img{
+  width: 30px;
+  margin: 0px 30px;
+}
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.sidebar {
+  background-color: rgb(255, 251, 251);
+  font-family: "Fira Code";
+  width: 15vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.logo > h1 {
+  font-size: 150px;
+  font-family: "Yanone Kaffeesatz";
+  text-shadow: 5px -5px 3px rgb(2, 245, 245);
+  background-clip: text;
+}
+.hamburger{
+  /* border: 2px solid red; */
+  width: 3rem;
+  height: 2rem;
+  margin: 30px;
+}
+.line {
+  width: 30px;
+  border: 2px solid rgb(207, 200, 200);
+  margin: 5px 0px;
+}
+.hamburger:hover{
   cursor: pointer;
 }
-.btn-2 {
-  width: 100px;
-  display: block;
-  margin: 10px auto;
-  padding: 5px;
-  font-family: "Amatic SC";
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
+.sidebar nav ul {
+  list-style: none;
 }
-.btn-1 a{
-  color:rgb(0, 0, 0);
+.sidebar nav li {
+  margin: 30px 0px;
+  font-size: 20px;
+  /* border: 2px solid black; */
+}
+.main {
+  /* background-color: yellow; */
+  font-family: "Fira Sans";
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./bg.jpg");
+  background-size: cover;
+  color: white;
+}
+.name-info {
+  padding: 0px 50px;
+  width: 70vw;
+  color: white;
+  letter-spacing: 2px;
+}
+.name-info > h1 {
+  font-size: 80px;
+}
+.name-info > h3 {
+  font-size: 40px;
+  margin: 5px 0px;
+}
+.name-info > p {
+  font-size: 20px;
+}
+.btn {
+  padding: 8px;
+  margin: 20px 0px;
+  font-size: 18px;
+  font-family: "Fira Sans";
+}
+.btn:hover {
+  cursor: pointer;
+  background: rgb(2, 245, 245);
+  color: white;
+  outline: none;
+  border: none;
   text-decoration: none;
 }
-.btn-1:hover {
-  background: rgb(11, 34, 52);
+.big-logo {
   color: white;
+  transform: rotate(-25deg);
+  width: 50vw;
+  /* border: 2px solid red; */
 }
-.btn-2:hover {
-  background: rgb(11, 34, 52);
-  color: white;
-}
-.follow {
+.big-logo > h1 {
   text-align: center;
+  font-size: 500px;
+  text-shadow: 5px -5px 8px rgb(2, 245, 245);
+  font-family: "Yanone Kaffeesatz";
 }
-i {
-  filter: invert(100%);
-  margin: 5px;
-}
-i a {
-  color: white;
-}
-i:hover {
-  color: rgb(82, 31, 2);
-  cursor: pointer;
-}
-.nav-list {
+
+/* Second Page */
+.aboutContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("./bg.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.nav-list li {
-  margin: 0px 15px;
-}
-.nav-list li a {
+.about {
   color: white;
-  text-decoration: none;
-  font-family: "Grey Qo";
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 5px;
+  width: 50vw;
+  padding: 30px;
+  text-align: justify;
+  font-family: "Yanone Kaffeesatz";
 }
-.nav-list li a:hover {
-  color: rgb(0, 132, 255);
-  cursor: pointer;
+.about > h1 {
+  margin: 20px 0px;
+  font-size: 80px;
+  letter-spacing: 4px;
 }
-
-
-@media only screen and (max-width:960px){
-  .starter{
-  height: 300px;
-  }
-}
-@media only screen and (max-width:550px){
-  .starter{
-  height: 500px;
-  }
-}
-@media only screen and (max-width:400px){
-  .starter{
-  height: 400px;
-  }
-  .starter > h1{
-    font-size: 35px;
-  }
-  .starter > p{
-  font-size: 15px;
-  }
-.nav-list{
-  flex-direction: column;
-}
-.first-Container-head{
+.about > p {
+  margin: 20px 0px;
   font-size: 30px;
 }
-.first-Container-para{
+
+/* Third Page */
+.worksContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-img > img {
+  width: 50vw;
+}
+.works {
+  width: 40vw;
+}
+.works > h1 {
+  margin: 20px 0px;
+  font-size: 60px;
+  letter-spacing: 4px;
+  font-family: "Fira Sans";
+}
+.works > p {
+  margin: 20px 0px;
   font-size: 20px;
-  width: 140px;
+  text-align: justify;
+  font-family: "Yanone Kaffeesatz";
 }
+.order-btn {
+  width: 40vw;
+  padding: 8px;
+  margin: 20px 0px;
+  font-size: 18px;
+  font-family: "Fira Sans";
 }
-@media only screen and (max-width:300px){
-  .starter{
-    height: 450px;
-  }
-  .starter > h1{
-    font-size: 25px;
-  }
-  .starter > p{
-    font-size: 15px;
-  }
+.order-btn:hover {
+  cursor: pointer;
+  background: rgb(2, 245, 245);
+  color: white;
+  outline: none;
+  text-decoration: none;
+  border: none;
 }
 
+/* Contact */
+.contactContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("./bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profiles {
+  width: 50vw;
+  /* border: 2px solid red; */
+  font-family: "Fira Sans";
+  padding: 20px;
+}
+.profiles > h1{
+  color:white;
+  margin: 20px 0px;
+  font-size: 60px;
+}
+.profiles > p{
+  display: inline;
+  margin: 0px 20px;
+  font-size: 20px;
+  text-align: justify;
+  color: white;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.contact-form > h1 {
+   color: white;
+  font-family: "Fira Sans";
+  font-size: 60px;
+}
+i{
+  filter: invert(100%);
+}
+.contact-form > input{
+  width: 30vw;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius:10px;
+  outline: none;
+  border: none;
+  font-family: "Fira Sans";
+}
+.contact-form > textarea{
+  width: 30vw;
+  padding: 10px;
+  margin: 10px 0px;
+  font-family: "Fira Sans";
+  border-radius:10px;
+  outline: none;
+  border: none;
+}
+.sbmt-btn{
+  width: 31.5vw;
+  height: 2.4rem;
+  border-radius: 10px;
+  font-family: "Fira Sans";
+  font-size: 1.3rem;
+}
+.sbmt-btn:hover {
+  cursor: pointer;
+  background: rgb(2, 245, 245);
+  color: white;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+a{
+  text-decoration:none;
+  color: rgb(19, 19, 19);
+}
