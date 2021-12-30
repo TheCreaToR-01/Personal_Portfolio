@@ -83,8 +83,8 @@
   color: white;
   letter-spacing: 2px;
 }
-.name-info > h1 {
-  font-size: 80px;
+.name-info > .big {
+  font-size: 90px;
 }
 .name-info > h3 {
   font-size: 40px;
@@ -137,7 +137,7 @@
   text-align: justify;
   font-family: "Yanone Kaffeesatz";
 }
-.about > h1 {
+.about > .heading {
   margin: 20px 0px;
   font-size: 80px;
   letter-spacing: 4px;
@@ -161,7 +161,7 @@
 .works {
   width: 40vw;
 }
-.works > h1 {
+.works > .heading {
   margin: 20px 0px;
   font-size: 60px;
   letter-spacing: 4px;
@@ -205,7 +205,7 @@
   font-family: "Fira Sans";
   padding: 20px;
 }
-.profiles > h1{
+.profiles > .heading{
   color:white;
   margin: 20px 0px;
   font-size: 60px;
@@ -222,7 +222,7 @@
   flex-direction: column;
   width: 40vw;
 }
-.contact-form > h1 {
+.contact-form > .heading {
    color: white;
   font-family: "Fira Sans";
   font-size: 60px;
